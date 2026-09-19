@@ -90,3 +90,36 @@ while n >= 1:
     n = n - 1
 
 print(counter)  
+
+# Вводим начальное время и конечное, а оно выводит время с промежутком
+h1 = int(input())
+m1 = int(input())
+h2 = int(input())
+m2 = int(input())
+
+start = h1 * 60 + m1
+stop = h2 * 60 + m2
+
+while h1 < h2 or (h1 == h2 and m1 <= m2):
+    if h1 < 10:
+        print("0" + str(h1), end =":")
+    else:
+        print(h1, end=":")
+        
+    if m1 < 10:
+        print("0" + str(m1))
+    else:
+        print(m1)
+    
+    m1 = m1 + 1
+    
+    if min == 60:
+        m1 = 0
+        h1 += 1
+
+   
+
+
+
+
+
