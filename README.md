@@ -1,7 +1,7 @@
 # stepik-beginner
 
 Мой путь в Python: задачи из курса
-«Поколение Python: для начинающих» на [Stepik](https://stepik.org).
+«Поколение Python: для начинающих» на [Stepik](https://stepik.org/users/1360154852/profile?preview=true).
 
 ## 📚 Прогресс
 
