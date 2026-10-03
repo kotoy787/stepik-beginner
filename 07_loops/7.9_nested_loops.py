@@ -26,3 +26,12 @@ for i in range(1, num + 1):
         print(i, end='')
     print()     
 
+# Сколько коров, быков, телят можно купить на 100 рублей
+for k in range(100):
+    for b in range(100):
+        for t in range(100):
+            if k * 5 + b * 10 + t * 0.5 == 100:
+                if k + b + t == 100:
+                    print(k, b, t)
+                    
+ 
