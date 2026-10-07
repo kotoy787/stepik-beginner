@@ -61,3 +61,41 @@ for x in range(a, b + 1):
         
 print(best_x, maximum, end=" ")        
 
+# Цифровой корень числа
+n = int(input())
+
+while n > 9:
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    n = total
+print(n)    
+    
+# Численный треугольник 3 
+n = int(input())
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end="")
+    
+    for j in range(i - 1, 0, -1):
+        print(j, end="")
+        
+    print()    
+    
+# Нахождение решений уравнения b + 3a + 2d = m для заданных n и m
+n = int(input())
+m = int(input())
+
+found = False
+
+for b in range(1, n):
+    for a in range(1, n):
+        for d in range(1, n):
+            if b + 3 * a + 2 * d == m:
+                print(str(b) + " + 3×" + str(a) + " + 2×" + str(d) + " = " + str(m))
+                found = True
+                
+if not found:
+    print("При заданных n и m решений не существует.")    
