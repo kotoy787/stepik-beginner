@@ -98,4 +98,42 @@ for b in range(1, n):
                 found = True
                 
 if not found:
-    print("При заданных n и m решений не существует.")    
+    print("При заданных n и m решений не существует.")  
+
+# 1 Способ Найти "Красивое время" когда h ** n = m
+n = int(input())
+
+for h in range(24):
+    m = h ** n
+    
+    if 0 <= m <= 59:
+        
+        if h < 10:
+            h_str = str(0) + h 
+        else:
+            h_str = h
+        
+        if m < 10:
+            m_str = str(0) + m
+        else:
+            m_str = m
+        
+        
+        print(h_str + ":" + m_str)
+
+# 2 способ решения этой задачи
+n = int(input())
+
+for h in range(24):
+    for m in range(60):
+        if h ** n == m:
+
+            if h < 10:
+                hh = "0" + str(h)
+            else:
+                hh = str(h)
+            if m < 10:
+                mm = "0" + str(m)
+            else:
+                mm = str(m)
+            print(hh + ":" + mm)                            
