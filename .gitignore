@@ -2,3 +2,4 @@ __pycache__/
 *.рус
 .venv/
 .env
+.DS_Store
