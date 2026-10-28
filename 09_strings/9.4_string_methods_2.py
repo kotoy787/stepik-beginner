@@ -31,10 +31,36 @@ if text.endswith(".com") or text.endswith(".ru"):
 else:
     print("NO")
 
+# Посчитать кол-во цифр в строке
+text = input()
+counter = 0
 
+for digit in "0123456789":
+    counter += text.count(digit)
 
+print(counter)    
 
+# 
+text = input().lower()
 
+if text.count("f") == 1: # Если буква f входит в строку один раз то 
+    print(text.find("f")) # Вывести индекс f
+elif text.count("f") > 1: # Если больше одной
+    print(text.find("f"), text.rfind("f")) # Вывести первую и последнюю f
+else: # Если вообще нету
+    print("NO")
+
+# Программа удаляет первое и последнее вхождение в строку h
+text = input()
+
+first_h = text.find("h")
+last_h = text.rfind("h")
+
+left_part = text[0:first_h]
+right_part = text[last_h + 1:]
+
+result = left_part + right_part
+print(result)
 
 
 
