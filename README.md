@@ -30,7 +30,7 @@
   - `9.2_slising.py` — срезы строк
   - `9.3_string_methods_1.py` — методы строк (Часть 1)
   - `9.4_string_methods_2.py` — методы строк (Часть 2)
-  - `9.5_string_methods_3.py  - методы строк (Часть 3)
+  - `9.5_string_methods_3.py` — методы строк (Часть 3)
 
   
 
