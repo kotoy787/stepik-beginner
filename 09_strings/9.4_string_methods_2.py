@@ -40,6 +40,25 @@ for digit in "0123456789":
 
 print(counter)    
 
+#
+text = input()
+
+max_count = 0
+most_frequent_char = ""
+
+for char in text:
+    # Считаем, сколько раз текущий символ встречается во всей строке
+    current_count = text.count(char)
+    
+    # Если он встречается чаще ИЛИ столько же раз, но мы идем слева направо,
+    # то он становится новым лидером (благодаря >= он будет самым правым)
+    if current_count >= max_count:
+        max_count = current_count
+        most_frequent_char = char
+
+print(most_frequent_char)
+
+
 # 
 text = input().lower()
 
