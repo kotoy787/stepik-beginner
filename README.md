@@ -39,7 +39,6 @@
   - `10_exam_string.py` — экзамен по строкам
  
 
-- `certificates/` — сертификаты о прохождении курсов [![Сертификат Python для начинающих](https://img.shields.io/badge/📜_Скачать_Сертификат-2ea44f?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](certificates/stepik-certificate-beginner.pdf)
 
 ## 🎯 Цель
 
