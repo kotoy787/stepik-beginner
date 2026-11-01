@@ -115,6 +115,3 @@ for word in words:
         result += word[k - 1]
 
 print(result)        
-
-     
-
